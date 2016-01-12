@@ -4,7 +4,7 @@
     <ProjectType>Web</ProjectType>    
     <DefaultName>custom-element</DefaultName>
     <Name>Aurelia Typescript Custom Element</Name>
-    <Description></Description>
+    <Description>Aurelia custom element with a typescript code file</Description>
     <Icon>icon.png</Icon>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <TemplateID>4898f970-0255-4946-80e5-9118e46428b8</TemplateID>

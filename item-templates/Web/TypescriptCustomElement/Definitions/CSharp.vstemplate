@@ -1,15 +1,14 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
     <ProjectType>CSharp</ProjectType>
-
     <DefaultName>custom-element</DefaultName>
     <Name>Aurelia Typescript Custom Element</Name>
-    <Description></Description>
+    <Description>Aurelia custom element with a TypeScript code file.</Description>
     <Icon>icon.png</Icon>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <TemplateID>011dfbc9-9e5d-4591-a5c8-8506ebec1154</TemplateID>
     <AppliesTo>!VB</AppliesTo>
-    <SortOrder>1000</SortOrder>
+    <SortOrder>1001</SortOrder>
   </TemplateData>
   <TemplateContent>
     <References />
