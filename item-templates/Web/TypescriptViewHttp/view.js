@@ -1,4 +1,4 @@
-System.register(['aurelia-framework'], function(exports_1, context_1) {
+System.register(["aurelia-framework"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -16,17 +16,25 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
             }],
         execute: function() {
             $safeitemname$ = (function () {
-                function $safeitemname$() {
-                    this.text = "";
+                function $safeitemname$(http) {
+                    this.http = http;
+                    this.rootUrl = "/api/root";
                 }
+                $safeitemname$.prototype.activate = function () {
+                    return this.loadData();
+                };
+                $safeitemname$.prototype.loadData = function () {
+                    var _this = this;
+                    return this.http(this.rootUrl + "/get-data")
+                        .then(function (response) {
+                        _this.vm = response.content;
+                    });
+                };
                 $safeitemname$.prototype.attached = function () {
                 };
-                __decorate([
-                    aurelia_framework_1.bindable({
-                        attribute: "text",
-                        defaultBindingMode: aurelia_framework_1.bindingMode.oneWay
-                    })
-                ], $safeitemname$.prototype, "text", void 0);
+                $safeitemname$ = __decorate([
+                    aurelia_framework_1.autoinject
+                ], $safeitemname$);
                 return $safeitemname$;
             }());
             exports_1("$safeitemname$", $safeitemname$);

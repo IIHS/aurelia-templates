@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <ProjectType>CSharp</ProjectType>    
+    <DefaultName>view-dialog</DefaultName>
+    <Name>Aurelia Typescript Dialog Save/Cancel View</Name>
+    <Description>A very basic Aurelia save/cancel typescript dialog view</Description>    
+    <Icon>icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>8299F32C-333D-4B19-9773-3D0255A671A6</TemplateID>
+    <AppliesTo>!VB</AppliesTo>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <References />     
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.html">view.html</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.ts" >view.ts</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Aurelia Typescript Save/Cancel Dialog View" />
+      <CustomParameter Name="$TemplateID$" Value="AE0A8797-3AC9-40EF-A788-ED2B86DAA8D6" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>    
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

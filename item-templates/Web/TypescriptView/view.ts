@@ -8,4 +8,7 @@ export class $safeitemname$ {
     activate() {
     }
 
+    attached() {
+    }
+
 }

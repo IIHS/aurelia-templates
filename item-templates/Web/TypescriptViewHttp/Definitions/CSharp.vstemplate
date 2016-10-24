@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <ProjectType>CSharp</ProjectType>    
+    <DefaultName>view</DefaultName>
+    <Name>Aurelia Typescript Http View</Name>
+    <Description>A very basic Aurelia typescript http view</Description>    
+    <Icon>icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>379DE3BB-93C9-4E68-B80B-E22AE8DA0B14</TemplateID>
+    <AppliesTo>!VB</AppliesTo>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <References />     
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.html">view.html</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.ts" >view.ts</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Aurelia Typescript Http View" />
+      <CustomParameter Name="$TemplateID$" Value="B0050EF6-5B7B-4AD3-B71F-9EEF9B5CE338" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>    
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
